@@ -9,23 +9,23 @@
     </head>
     <body>
         <div align="center">
-            <h1>Item List</h1>
+            <h1>Student List</h1>
             <table border="1">
             <tr>
                 <th>S.No.</th>
-                <th>Item Code</th>
-                <th>Item Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
+                <th>Roll No.</th>
+                <th>University</th>
+                <th>Course</th>
+                <th>Student</th>
               </tr>  
                  
                 <c:forEach var="item" items="${itemList}" varStatus="status">
                 <tr>
                     <td>${status.index + 1}</td>
-                    <td>${item.item_code}</td>
-                    <td>${item.item_name}</td>
-                    <td>${item.price}</td>
-                    <td>${item.qty}</td>
+                    <td>${item.rollno}</td>
+                    <td>${item.universityName}</td>
+                    <td>${item.course}</td>
+                    <td>${item.student}</td>
                              
                 </tr>
                 </c:forEach>             
